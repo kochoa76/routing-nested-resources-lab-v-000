@@ -2,7 +2,7 @@
 <% @songs.each do |song| %>
   <li><%= display_artist(song) %> - <%= link_to song.title, song_path(song) %></li>
   <%if params[:artist_id]%>
-  <li><%= link_to song.artist.name, artist_path(song.artist) %></li>
+  <li><%= link_to song.artist.name, artist_songs_path(song.artist) %></li>
 <% end %>
 <% end %> 
 </ul>
