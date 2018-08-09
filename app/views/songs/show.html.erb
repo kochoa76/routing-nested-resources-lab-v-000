@@ -1,6 +1,7 @@
 <h1><%= @song.title %>
   <%if params[:artist_id]%>
   <%= link_to @artist.name, artist_path(@artist) %></h1>
+  <%end%> 
 <h3> by <%= display_artist(@song) %></h3>
 
 <%= link_to "All Songs", songs_path %>
