@@ -1,4 +1,4 @@
-<h1><%= @song.title %>
+<h1><%= link_to @song.title, song_path(@song) %>
   <%if params[:artist_id]%>
   <%= link_to @artist.name, artist_path(@artist) %></h1>
   <%end%> 
