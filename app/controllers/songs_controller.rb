@@ -4,8 +4,8 @@ class SongsController < ApplicationController
       @artist = Artist.find(params[:artist_id])
       if @artist.nil?
         redirect_to artists_path, alert: "Artist Not Found"
-      else 
-        @artist.songs 
+      else
+        @artist.songs
     else
       @songs = Song.all
     end
